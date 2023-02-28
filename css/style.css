@@ -1,0 +1,270 @@
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, lightblue, white);
+}
+
+/* Estilo de menu*/
+a.menu, h2.nombrecv {
+    text-decoration: none;
+    color: white;
+    margin-left:20px;
+    font-size: 45px;
+    text-shadow: #e8491d;
+}
+
+header {
+    display: flex;
+    min-height: 120px;
+    background-color: rgb(6, 6, 105);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ header li{
+    float:left;
+    display:inline;
+    padding: 0px 0px 10px 0px;
+  }
+
+
+nav a.menu{
+    padding: 0px 20px 0px 10px;
+    font-size: 25px;
+    color: white;
+}
+
+nav a.menu:hover{
+    color: #eb967e;
+    font-weight:bold;
+}
+
+header .current a{
+    color:#e8491d;
+    font-weight:bold;
+}
+
+/*estilo imagen de inicio*/
+img.foto-perfil{
+    display: flex;
+    float: left;
+    width: 30%; 
+    margin: 30px 50px 30px 50px;
+    border-radius: 150px;
+}
+
+div.datos{
+    float: left;
+}
+
+h3{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3.titulos{
+    height: 80px;
+    background-color: rgb(181, 158, 243);
+    color: rgb(6, 6, 105);
+    margin: 20px 0px 0px 0px;
+    padding-top: 20px;
+    }
+
+    
+h3.datos, ul.datos{
+    width: 50%;
+    float: right;
+}
+
+span.datos{
+    padding-left: 25px;
+    color: rgb(27, 1, 141);
+    font-size: 22px ;
+}
+
+li{
+    padding: 25px;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+hr{
+    width: 90%;
+    margin-top: 20px;
+}   
+
+hr.titulos{
+    width: 50%;
+}
+
+div{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*estilo de las redes sociales en el pie de pagina*/
+footer{
+    display: flex;
+    justify-content: right;
+    background-color: rgb(6, 6, 105);
+    margin: 0px 0px 0px 0px;
+}
+
+p{
+    padding: 10px 10px 10px 10px;
+    margin: 20px 30px 30px 30px;
+    width: 33%;
+    text-align: right;
+    color:white;
+}
+
+p.experiencia-laboral{
+    color: black;
+    width: 80%;
+    text-align: justify;
+    margin: 0px 0px 0px 20%;
+}
+
+.red-social{
+    height: 50px;
+    margin: 20px 10px 10px 10px;   
+}
+
+.red-social:hover{
+    height: 55px;   
+}
+
+/*estilo hoja de contacto*/
+label{
+    display: flex;
+    justify-content: left;
+    padding: 10px 0px 5px 0px; 
+}
+
+div.contacto{
+    font-size: 20px;
+    font-weight: 600;
+    float: right;
+    width: 50%;
+}
+
+img.contacto{
+    display: inline;
+    width: 30%; 
+    margin: 30px 30px 30px 10%;
+    border-radius: 100px;
+}
+
+/*estilo de input en general*/
+input{
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*estilo del cuadro de e-mail en la hoja de contacto*/
+input#email{
+    width: 50%;
+}
+
+/*estilo del cuadro de consultas para enviar en la hoja de contacto*/
+textarea#consulta{
+    width: 70%;
+    height: 150px;
+    text-align: start;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+}
+
+button.enviar, input.enviar{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(to right, rgb(0, 90, 121), rgb(49, 1, 223));
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    border-color: white;
+}
+
+
+/*dando estilo con CSS a la hoja sobre mi*/
+.foto-sobre-mi{
+    display: flex;
+    float: left;
+    width: 40%; 
+    margin: 30px 30px 30px 30px;
+    border-radius: 150px;
+}
+
+li.sobre-mi{
+    padding: 50px;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+label.subtitulo{
+    display: block;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(14, 14, 107);
+    text-decoration: underline;
+}
+
+strong{
+    display: block;
+    color: #6a11df;
+    text-decoration: underline;
+    margin-right: 20px;
+    font-size: 25px;
+    padding: 0px 20px 0px 0px;
+}
+
+p.sobre-mi{
+    display: flex;
+    float: right;
+    color:black;
+    width: 50%;
+    text-align: left;
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 30px 20px;
+}
+
+/*acomodando la pagina a una resolucion menor*/
+@media (max-width: 900px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px ;
+    }
+    .foto-sobre-mi{
+        display: none;
+    }
+    img.foto-perfil{
+        display: none;
+    }
+    p.sobre-mi{
+        float: left;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    .red-social{
+        height: 30px;
+        margin: 20px 10px 10px 10px;   
+    }
+    
+    .red-social:hover{
+        height: 32px;   
+    }
+    }
+
+
+
+
+  
